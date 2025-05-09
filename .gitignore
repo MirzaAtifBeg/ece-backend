@@ -1,0 +1,28 @@
+.env
+node_modules
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Sensitive variable files
+*.tfvars
+.env
+
+# Terraform plan files
+*.tfplan
+
+# Lock file (optional: keep if collaborating)
+.terraform.lock.hcl
+
+# IDE/editor-specific
+.vscode/
+*.log
+.DS_Store
+.idea/
+*.swp
+
+# OS-specific
+Thumbs.db
+
