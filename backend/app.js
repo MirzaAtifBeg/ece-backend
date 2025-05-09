@@ -11,6 +11,9 @@ app.post('/', (req, res) => {
   res.send('Hello from POST request!');
 });
 
+app.put('/', (req, res) => {
+  res.send('Hello from PUT request!');
+});
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

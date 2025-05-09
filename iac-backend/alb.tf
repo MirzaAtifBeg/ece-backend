@@ -11,7 +11,7 @@ resource "aws_lb_target_group" "app_tg" {
   name        = "${var.project_name}-tg"
   port        = 80
   protocol    = "HTTP"
-  target_type = "ip" # ✅ Required for Fargate (awsvpc)
+  target_type = "ip"
   vpc_id      = data.aws_vpc.default.id
   health_check {
     path                = "/"
